@@ -1,3 +1,4 @@
+sudo apt update
 sudo apt install curl vim zsh git git-lfs fonts-powerline openssh-server
 
 #ZSH SETUP
