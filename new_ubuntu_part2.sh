@@ -3,7 +3,7 @@ sed -i 's/ZSH_THEME="robbyrussell"/ZSH_THEME="agnoster"/g' ~/.zshrc
 chsh -s $(which zsh)
 
 #SSH
-ssh-keygen -t ed25519
+[ -f ~/.ssh/id_ed25519.pub ] || ssh-keygen -t ed25519
 echo "-------SSH PUBLIC KEY-------"
 cat ~/.ssh/id_ed25519.pub
 echo "-------SSH PUBLIC KEY-------"
@@ -25,3 +25,5 @@ git clone https://github.com/chrisbra/unicode.vim ~/.vim/bundle/unicode.vim
 git clone https://github.com/rhysd/vim-clang-format ~/.vim/bundle/vim-clang-format
 
 ln -s $(pwd)/.vimrc ~/.vimrc
+
+source ~/.zshrc
