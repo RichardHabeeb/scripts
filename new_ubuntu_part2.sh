@@ -26,4 +26,5 @@ git clone https://github.com/rhysd/vim-clang-format ~/.vim/bundle/vim-clang-form
 
 ln -s $(pwd)/.vimrc ~/.vimrc
 
-source ~/.zshrc
+
+exec zsh
