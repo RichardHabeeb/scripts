@@ -1,3 +1,5 @@
+#!/usr/bin/env zsh
+
 #ZSH SETUP (CONT)
 sed -i 's/ZSH_THEME="robbyrussell"/ZSH_THEME="agnoster"/g' ~/.zshrc
 chsh -s $(which zsh)
