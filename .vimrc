@@ -17,6 +17,7 @@ set background=dark
 colorscheme solarized
 let g:airlne_theme='solarized'
 filetype plugin on
+syntax on
 
 let g:better_whitespace_enabled=1
 let g:strip_whitespace_on_save=1
