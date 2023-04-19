@@ -12,6 +12,7 @@ set shiftwidth=4
 set tabstop=4
 set ai
 set si
+set hlsearch
 
 set background=dark
 colorscheme solarized
@@ -27,3 +28,7 @@ endif
 set spell spelllang=en_us
 hi clear SpellBad
 hi SpellBad cterm=underline
+set spellfile=~/.vim/spell/en.utf-8.add
+
+"set list
+"set listchars=tab:>

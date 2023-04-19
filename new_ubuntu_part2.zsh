@@ -25,7 +25,9 @@ git clone https://github.com/altercation/vim-colors-solarized.git ~/.vim/bundle/
 git clone https://github.com/kyuhi/vim-emoji-complete.git ~/.vim/bundle/vim-emoji-complete
 git clone https://github.com/chrisbra/unicode.vim ~/.vim/bundle/unicode.vim
 git clone https://github.com/rhysd/vim-clang-format ~/.vim/bundle/vim-clang-format
+git clone https://github.com/Thyrum/vim-stabs.git ~/.vim/bundle/vim-stabs
 
+mkdir -p ~/.vim/spell/
 ln -s $(pwd)/.vimrc ~/.vimrc
 
 
