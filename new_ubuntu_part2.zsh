@@ -13,6 +13,7 @@ echo "-------SSH PUBLIC KEY-------"
 #GIT SETUP
 git config --global user.name "Richard Habeeb"
 git config --global user.email "richard.habeeb@gmail.com"
+git config --global core.editor vim
 
 #VIM SETUP
 mkdir -p ~/.vim/autoload ~/.vim/bundle && \
