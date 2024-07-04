@@ -3,7 +3,7 @@
 
 #Setup mouse sensitivity
 xinput set-prop "pointer:Logitech MX Master 2S" 295 -0.85
-xinput set-prop "pointer:Razer DeathAdder" 295 -1.0
+#xinput set-prop "pointer:Razer DeathAdder" 295 -1.0
 
 #x11 settings
 xrdb /home/richard/.Xresources
