@@ -1,0 +1,21 @@
+--- /etc/modprobe.d/blacklist.conf      2021-11-24 17:21:30.228197020 -0500
++++ /etc/modprobe.d/blacklist.conf.dpkg-new     2022-01-28 09:49:50.000000000 -0500
+@@ -25,10 +25,6 @@
+ # Conflicts with dvb driver (which is better for handling this device)
+ blacklist snd_aw2
+ 
+-# Causes trackpads to stop working on Lenovo 11e 2nd gen (Ubuntu: #1802135)
+-# and Lenovo x240 to hang on boot (Ubuntu: #1802689)
+-blacklist i2c_i801
+-
+ # replaced by p54pci
+ blacklist prism54
+ 
+@@ -54,6 +50,3 @@
+ # continues to build and is installable for the few cases where its
+ # really needed.
+ blacklist amd76x_edac
+-
+-
+-blacklist ch341
+

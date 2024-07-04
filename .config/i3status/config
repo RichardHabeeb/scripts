@@ -1,0 +1,54 @@
+general {
+	colors = true
+	color_good = "#859900"
+	color_bad = "#DC322F"
+	interval = 1
+}
+
+order += "volume master"
+order += "disk /"
+order += "cpu_temperature 0"
+order += "cpu_temperature 1"
+order += "cpu_temperature 2"
+order += "cpu_temperature 3"
+order += "ethernet eno1"
+order += "tztime local"
+
+disk "/" {
+	format = "💾 %free"
+}
+
+cpu_temperature 0 {
+	format="♨️ %degrees C"
+	path = "/sys/devices/platform/coretemp.0/hwmon/hwmon1/temp1_input"
+}
+cpu_temperature 1 {
+	format="♨️ %degrees C"
+	path = "/sys/devices/platform/coretemp.0/hwmon/hwmon1/temp2_input"
+}
+cpu_temperature 2 {
+	format="♨️ %degrees C"
+	path = "/sys/devices/platform/coretemp.0/hwmon/hwmon1/temp3_input"
+}
+cpu_temperature 3 {
+	format="♨️ %degrees C"
+	path = "/sys/devices/platform/coretemp.0/hwmon/hwmon1/temp4_input"
+}
+
+
+volume master {
+	format = "🎵 %volume"
+	device = "default"
+	mixer = "Master"
+	mixer_idx = 0
+}
+
+
+ethernet eno1 {
+	format_up = "⚡ %ip (%speed)"
+	format_down = "💀 network down"
+}
+
+tztime local {
+	format = "%a %b %_d %Y ✨ %I:%M:%S"
+}

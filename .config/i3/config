@@ -179,28 +179,26 @@ bar {
     position top
     status_command i3status
     tray_output LVDS
-	#strip_workspace_numbers yes
+    #strip_workspace_numbers yes
     colors{
         background #232323
         statusline #DCDCDC
     }
 }
 
-#######################################################################
-# automatically start i3-config-wizard to offer the user to create a
-# keysym-based config which used their favorite modifier (alt or windows)
-#
-# i3-config-wizard will not launch if there already is a config file
-# in ~/.i3/config.
-#
-# Please remove the following exec line:
-#######################################################################
+#Solarized
+#$base03:    #002b36;
+#$base02:    #073642;
+#$base01:    #586e75;
+#$base00:    #657b83;
+#$base0:     #839496;
+#$base1:     #93a1a1;
 
 # class                 border  backgr. text    indicator child_border
-client.focused          #4c7899 #285577 #ffffff #2e9ef4   #285577
-client.focused_inactive #333333 #5f676a #ffffff #484e50   #5f676a
-client.unfocused        #333333 #222222 #888888 #292d2e   #222222
-client.urgent           #2f343a #900000 #ffffff #900000   #900000
+client.focused          #657b83 #586e75 #ffffff #285577   #ffffff
+client.focused_inactive #657b83 #586e75 #ffffff #484e50   #5f676a
+client.unfocused        #073642 #002b36 #839496 #292d2e   #222222
+client.urgent           #dc322f #dc322f #ffffff #dc322f   #dc322f
 client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
 
 client.background       #ffffff
