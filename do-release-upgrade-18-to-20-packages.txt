@@ -1,0 +1,28 @@
+No longer supported: dnsutils gcc-8-base geoip-database libargon2-0
+  libdumbnet1 libgeoip1 libgtk2.0-dev libiptc0 liblxc-common liblxc1
+  libncurses5 libncursesw5 libqt5gui5 libqt5svg5-dev libtinfo5 lxcfs
+  lxd lxd-client nmap python-crypto python3-asn1crypto qtbase5-dev
+  qtbase5-private-dev uidmap xdelta3
+
+
+Remove: gcc-5-multilib-x86-64-linux-gnux32 libapt-inst2.0
+  libapt-pkg5.0 libpolkit-backend-1-0 python python-dev python-pip
+  python3-opencv qt4-qtconfig
+
+Remove (was auto installed) lib32asan2-x32-cross
+  lib32cilkrts5-x32-cross lib32gcc-5-dev-x32-cross
+  lib32gcc1-x32-cross lib32stdc++6-x32-cross lib32ubsan0-x32-cross
+  lib64gcc-5-dev-x32-cross lib64gcc1-x32-cross libapache2-mod-php7.2
+  libcupscgi1 libcupsmime1 libcupsppdc1 libgcc1-arm64-cross
+  libgcc1-armel-cross libgcc1-armhf-cross libgcc1-x32-cross libgdal20
+  libhdf5-100 libhdf5-openmpi-100 libnetcdf13 libopencv-calib3d3.2
+  libopencv-contrib3.2 libopencv-features2d3.2 libopencv-highgui3.2
+  libopencv-imgcodecs3.2 libopencv-objdetect3.2
+  libopencv-stitching3.2 libopencv-superres3.2 libopencv-videoio3.2
+  libopencv-videostab3.2 libpython-dev libpython-stdlib
+  libqbscore1.10 libqbsqtprofilesetup1.10 libqt4-dbus
+  libqt4-declarative libqt4-network libqt4-script libqt4-sql
+  libqt4-sql-mysql libqt4-xml libqt4-xmlpatterns libqtcore4
+  libqtdbus4 libqtgui4 libsensors4 libsnmp30 libssl1.0-dev nodejs-dev
+  php7.2 python-keyrings.alt python-minimal qdbus qt-at-spi sgabios
+
