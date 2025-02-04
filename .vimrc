@@ -18,6 +18,8 @@ set smartindent
 "make backspace delete shiftwidth worth of space
 set smarttab
 
+set backspace=indent,eol,start
+
 set background=dark
 colorscheme solarized
 let g:airlne_theme='solarized'
