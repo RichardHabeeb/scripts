@@ -11,7 +11,13 @@ order += "cpu_temperature 0"
 order += "cpu_temperature 1"
 order += "cpu_temperature 2"
 order += "cpu_temperature 3"
-order += "ethernet eno1"
+order += "cpu_temperature 4"
+order += "cpu_temperature 5"
+order += "cpu_temperature 6"
+order += "cpu_temperature 7"
+order += "cpu_temperature 8"
+order += "cpu_temperature 9"
+order += "ethernet enp4s0"
 order += "tztime local"
 
 disk "/" {
@@ -20,19 +26,43 @@ disk "/" {
 
 cpu_temperature 0 {
 	format="♨️ %degrees C"
-	path = "/sys/devices/platform/coretemp.0/hwmon/hwmon1/temp1_input"
+	path = "/sys/devices/platform/coretemp.0/hwmon/hwmon?/temp1_input"
 }
 cpu_temperature 1 {
 	format="♨️ %degrees C"
-	path = "/sys/devices/platform/coretemp.0/hwmon/hwmon1/temp2_input"
+	path = "/sys/devices/platform/coretemp.0/hwmon/hwmon?/temp2_input"
 }
 cpu_temperature 2 {
 	format="♨️ %degrees C"
-	path = "/sys/devices/platform/coretemp.0/hwmon/hwmon1/temp3_input"
+	path = "/sys/devices/platform/coretemp.0/hwmon/hwmon?/temp3_input"
 }
 cpu_temperature 3 {
 	format="♨️ %degrees C"
-	path = "/sys/devices/platform/coretemp.0/hwmon/hwmon1/temp4_input"
+	path = "/sys/devices/platform/coretemp.0/hwmon/hwmon?/temp4_input"
+}
+cpu_temperature 4 {
+	format="♨️ %degrees C"
+	path = "/sys/devices/platform/coretemp.0/hwmon/hwmon?/temp5_input"
+}
+cpu_temperature 5 {
+	format="♨️ %degrees C"
+	path = "/sys/devices/platform/coretemp.0/hwmon/hwmon?/temp6_input"
+}
+cpu_temperature 6 {
+	format="♨️ %degrees C"
+	path = "/sys/devices/platform/coretemp.0/hwmon/hwmon?/temp7_input"
+}
+cpu_temperature 7 {
+	format="♨️ %degrees C"
+	path = "/sys/devices/platform/coretemp.0/hwmon/hwmon?/temp8_input"
+}
+cpu_temperature 8 {
+	format="♨️ %degrees C"
+	path = "/sys/devices/platform/coretemp.0/hwmon/hwmon?/temp8_input"
+}
+cpu_temperature 9 {
+	format="♨️ %degrees C"
+	path = "/sys/devices/platform/coretemp.0/hwmon/hwmon?/temp8_input"
 }
 
 
@@ -44,7 +74,7 @@ volume master {
 }
 
 
-ethernet eno1 {
+ethernet enp4s0 {
 	format_up = "⚡ %ip (%speed)"
 	format_down = "💀 network down"
 }

@@ -16,7 +16,7 @@ git config --global user.email "richard.habeeb@gmail.com"
 git config --global core.editor vim
 
 #VIM SETUP
-mkdir -p ~/.vim/autoload ~/.vim/bundle && \
+mkdir -p ~/.vim/autoload ~/.vim/bundle
 curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 
 git clone https://github.com/vim-airline/vim-airline-themes ~/.vim/bundle/vim-airline-themes
@@ -29,9 +29,14 @@ git clone https://github.com/rhysd/vim-clang-format ~/.vim/bundle/vim-clang-form
 git clone https://github.com/Thyrum/vim-stabs.git ~/.vim/bundle/vim-stabs
 
 mkdir -p ~/.vim/spell/
+mkdir -p ~/.config/i3/
+mkdir -p ~/.config/i3status/
+
 ln -s $(pwd)/.vimrc ~/.vimrc
 ln -s $(pwd)/.tmux.conf ~/.tmux.conf
 ln -s $(pwd)/.wezterm.lua ~/.wezterm.lua
+ln -s $(pwd)/.config/i3/config ~/.config/i3/config
+ln -s $(pwd)/.config/i3status/config ~/.config/i3status/config
 
 echo 'export GPG_TTY=$(tty)' >> ~/.zshrc
 echo 'export EDITOR=vim' >> ~/.zshrc
