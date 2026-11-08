@@ -1,5 +1,5 @@
 sudo apt update
-sudo apt install -y curl vim zsh git git-lfs fonts-powerline openssh-server language-pack-en
+sudo apt install -y curl vim zsh git git-lfs fonts-powerline openssh-server language-pack-en tmux
 sudo update-locale
 
 #ZSH SETUP

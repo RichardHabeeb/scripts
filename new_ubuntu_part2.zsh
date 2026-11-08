@@ -30,6 +30,10 @@ git clone https://github.com/Thyrum/vim-stabs.git ~/.vim/bundle/vim-stabs
 
 mkdir -p ~/.vim/spell/
 ln -s $(pwd)/.vimrc ~/.vimrc
+ln -s $(pwd)/.tmux.conf ~/.tmux.conf
+ln -s $(pwd)/.wezterm.lua ~/.wezterm.lua
 
+echo 'export GPG_TTY=$(tty)' >> ~/.zshrc
+echo 'export EDITOR=vim' >> ~/.zshrc
 
 exec zsh

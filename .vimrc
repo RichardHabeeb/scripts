@@ -36,12 +36,19 @@ hi clear SpellBad
 hi SpellBad cterm=underline
 set spellfile=~/.vim/spell/en.utf-8.add
 
-
 set listchars=tab:\⇥\ ,trail:·,extends:>,precedes:<,nbsp:+
-"set listchars=tab:▸\ ,eol:¬
-"set listchars=tab:>
 set list
+highlight SpecialKey term=NONE cterm=bold ctermbg=8 ctermfg=9
+
 
 " Exec local .vimrc
 set exrc
 set secure
+
+function Linuxrc()
+	"setlocal autoindent
+	setlocal cindent
+	setlocal noexpandtab
+	setlocal tabstop=8
+	setlocal shiftwidth=8
+endfunction
